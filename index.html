@@ -1,116 +1,105 @@
-<!--Xiang Lu-->
-<!--200563938-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My favorite song">
-    <!--title-->
-    <title>My favorite song</title>
+    <title>Pizza shop</title>
+    <!--css code-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
- <main>
-    <!--song name-->
-  <section>
-     <div>
-        <h1>Hotline Bling</h1>
-     </div>
-    <!--singer-->
-     <div>
-        <h4>Singer: Billie Eilish</h4>
-     </div>
-    <!--image 1-->
-     <div>
-        <img src="./2.jpg" width="250" alt="image 1">
-     </div>
-  </section>
-  <!--lyric-->
-  <section>
-    <div>
-        <h2>Lyric:</h2>
-    </div>  
-     <p> 
-        You used to call me on my cell phone
-        Late night when you need my love
-    </p>
-     <p>
-        Late night when you need my love
-    </p>
-     <p>
-        Call me on my cell phone  
-     </p>
-     <p>
-        Late night when you need my love
-     </p>
-     <p>
-        I know when that hotline bling
-     </p>
-     <p>
-        That could only mean one thing
-     </p>
-     <p>
-        I know when that hotline bling
-     </p>
-     <p>
-        That could only mean one thing 
-     </p>
-     <p>
-        'Cause ever since I left the city, you
-        Got a reputation for yourself now
-     </p>
-     <p>
-        Everybody knows and I feel left out
-     </p>
-     <p>
-        Girl, you got me down, you got me stressed out
-     </p>
-     <p>
-        'Cause ever since I left the city, you 
-     </p>
-     <p>
-        Started wearing less and goin' out more
-     </p>
-     <p>
-        Glasses of champagne out on the dance floor
-     </p>
-     <p>
-        Hangin' with some girls I've never seen before
-     </p>
-     <p>
-        'Cause ever since I left the city
-     </p>
-     <p>
-        Late night when you need my love
-     </p>
-     <p>
-        Call me on my cell phone
-     </p>
-     <p>
-        I know when that hotline bling
-     </p>
-     <p>
-        That could only mean one thing
-     </p>
-     <p>
-        I know when that hotline bling
-     </p> 
-    <p>
-        That could only mean one thing
-    </p>  
-  </section>
- </main>
- <aside>
-    <section>
-    <!--video-->
-      <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8jWgbnXBEPQ?si=d3Ov3x_zGifqVQZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
- </aside>
 
- <footer>
- </footer>
+<body>
+    <header>
+         <!--LOGO-->
+        <div>
+            <img src="logo.jpg" width="200" alt="pizza image"/>
+        </div>
+        <nav>
+                <a href="index.html">
+                    <li>home</li>
+                </a>
+                <a href="index.html">
+                    <li>about</li>
+                </a>
+                <a href="index.html">
+                    <li>contact</li>
+                </a>
+        </nav>
+    </header>
+    <main>
+        <!--pizza image and h1-->
+        <section class="hero">
+            <h1>Welcome to pizza shop</h1>
+            <img src="1.jpg" width="400"/>
+        </section>
+        <!--MEUN-->
+        <section>
+        <div>
+            <p>1.SIZA</p>
+            <form>
+            <label for="size">Choose your pizza size:</label>
+            <label>Small</label>
+            <input type="radio" value="small" name="size" checked="checked"/>
+            <label>Medium</label>
+            <input type="radio" value="medium" name="size"/>
+            <label>Large</label>
+            <input type="radio" value="large" name="size"/>
+            </form>
+        </div>
+
+        <div>
+            <p>2.PIZZA FLAVOR</p>
+            <form>
+                <label for="flavor">Choose your flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="veggie">Veggie</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <option value="bbq">BBQ</option>
+                    <option value="hawaiian" selected>Hawaiian</option>
+                    <option value="cheese">Cheese</option>
+                </select>
+        </div>
+        <div>
+            <p>3.SAUCE</p>
+            <form>
+                <label for="sauce">Choose sauce:</label>
+                <select id="sauce" name="sauce">
+                    <option value="veggie">Veggie</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <option value="bbq" selected>BBQ</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="cheese">Cheese</option>
+                </select>
+        </div>
+        <div>
+            <p>4.QUANTITY</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number"/>
+        </div>
+        <div>
+            <p>5.DELIVERY ADDRESS</p>
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Enter your name"/>
+        </div>
+        <div>
+            <label for="phone">Your phone number:</label>
+            <input type="text" placeholder="Enter phone number"/>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="location">Enter location</label>
+            <input type="text" placeholder="Enter location"/>
+        </div>
+        <div>
+            <button>ORDER NOW</button>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <h3>&copy; 2024 Pizza pizza</h3>
+    </footer>
 </body>
 </html>
