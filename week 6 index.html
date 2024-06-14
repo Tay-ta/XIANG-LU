@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza shop</title>
+    <!--css code-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+         <!--LOGO-->
+        <div>
+            <img src="logo.jpg" width="200" alt="pizza image"/>
+        </div>
+        <nav>
+                <a href="index.html">
+                    <li>home</li>
+                </a>
+                <a href="index.html">
+                    <li>about</li>
+                </a>
+                <a href="index.html">
+                    <li>contact</li>
+                </a>
+        </nav>
+    </header>
+    <main>
+        <!--pizza image and h1-->
+        <section class="hero">
+            <h1>Welcome to pizza shop</h1>
+            <img src="1.jpg" width="400"/>
+        </section>
+        <!--MEUN-->
+        <section>
+        <div>
+            <p>1.SIZA</p>
+            <form>
+            <label for="size">Choose your pizza size:</label>
+            <label>Small</label>
+            <input type="radio" value="small" name="size" checked="checked"/>
+            <label>Medium</label>
+            <input type="radio" value="medium" name="size"/>
+            <label>Large</label>
+            <input type="radio" value="large" name="size"/>
+            </form>
+        </div>
+
+        <div>
+            <p>2.PIZZA FLAVOR</p>
+            <form>
+                <label for="flavor">Choose your flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="veggie">Veggie</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <option value="bbq">BBQ</option>
+                    <option value="hawaiian" selected>Hawaiian</option>
+                    <option value="cheese">Cheese</option>
+                </select>
+        </div>
+        <div>
+            <p>3.SAUCE</p>
+            <form>
+                <label for="sauce">Choose sauce:</label>
+                <select id="sauce" name="sauce">
+                    <option value="veggie">Veggie</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <option value="bbq" selected>BBQ</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="cheese">Cheese</option>
+                </select>
+        </div>
+        <div>
+            <p>4.QUANTITY</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number"/>
+        </div>
+        <div>
+            <p>5.DELIVERY ADDRESS</p>
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Enter your name"/>
+        </div>
+        <div>
+            <label for="phone">Your phone number:</label>
+            <input type="text" placeholder="Enter phone number"/>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="location">Enter location</label>
+            <input type="text" placeholder="Enter location"/>
+        </div>
+        <div>
+            <button>ORDER NOW</button>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <h3>&copy; 2024 Pizza pizza</h3>
+    </footer>
+</body>
+</html>
