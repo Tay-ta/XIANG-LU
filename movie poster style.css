@@ -1,0 +1,337 @@
+body
+{
+    background-color: #ececec;
+    margin: 0px;
+}
+
+/* this is main div container of the boay */
+.container
+{
+    height: 1330px;
+    width:66%;
+    background-image: url('./image/2.jpg');
+    background-size: cover;
+    margin:0px auto;
+}
+
+/* css for the top portion of the poster */
+.container>div:nth-child(1)
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* css for the top header of the poster */
+.container >div:nth-child(1)>p
+{
+    color:#d76f6f ;
+    color: #ffffff;
+    font-family: 'Changa One', sans-serif;
+    margin: 8px 0 0 0;
+    letter-spacing: 2px;
+    font-size: 52px;
+    font-weight: bold;
+    width: 3000px; 
+    text-align: center; 
+    padding-bottom: 220px;
+    
+}
+
+/* css for the bottom portion of the poster  */
+.container>div:nth-child(2)
+{
+    color: #f50404;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Urbanist', sans-serif;
+    margin: 100px 0 0 20px;
+    letter-spacing: 100px;
+} 
+
+
+/* css for the second and third div in bottom portion */
+.container>div:nth-child(2)>div:nth-child(2),
+.container>div:nth-child(2)>div:nth-child(3)
+{
+    margin: 25px 0 0 0;
+}
+
+/* css for all the paragraphs on bottom portion of the poster */
+.container>div:nth-child(2)>div>p
+{
+    margin: 0;
+    font-size: 27.5px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+}
+
+/* css for movie name and main actor name  */
+.movieName
+{
+    font-family: 'Changa One', sans-serif;
+    margin: 12px 0 0 0;
+}
+.movieName > div:nth-child(1)
+{
+    font-size: 38px;
+    font-weight: 100;
+    letter-spacing: 15px;
+    line-height: 45px;
+    color: #faf9f9;
+}
+.movieName > div:nth-child(2)
+{
+    font-size: 38px;
+    font-weight: 100;
+    letter-spacing: 15px;
+    line-height: 45px;
+    color: #faf9f9;
+}
+.movieName > div:nth-child(3)
+{
+    color: #faf9f9;
+    font-size: 120px;
+    font-weight: 700;
+    word-spacing: 13px;
+    letter-spacing: 15px;
+    line-height: 70px;
+}
+
+/* css for production, sponsorors and movie team names  */
+.productionTeam
+{
+    margin: 25px 0 0 0;
+}
+
+/* common css for all the paragraph in the credit section */
+.productionTeam > p
+{
+    color: #4a0707;
+    color: #ffffff;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 26px;
+    margin: 0 20px;
+}
+
+/* css for the span contine small fonts */
+/* css for credits and span tags containing small text */
+.productionTeam > p 
+{
+    color: #ececec;
+    font-family: 'Big Shoulders Text', sans-serif;
+
+}
+.productionTeam > p > span.smallText
+{
+    font-size: 8px;
+    display: inline-block;
+    line-height: 8px;
+    text-align: right;
+}
+
+.productionTeam >p >span.smallText >span
+{
+    display: block;
+    line-height: 8px;
+    text-align: right;
+}
+
+/* css for 1 child pragraph of .production */
+.productionTeam > p:nth-child(1)
+{
+    word-spacing: 4.6px;
+}
+/* css for 2nd child pragraph of .production */
+.productionTeam > p:nth-child(2)
+{
+    word-spacing: 4px;
+}
+/* css for 3rd child pragraph of .production */
+.productionTeam > p:nth-child(3)
+{
+    word-spacing: 3.7px;
+}
+
+/* css for 4th child pragraph of .production */
+.productionTeam > p:nth-child(4)
+{
+    word-spacing: 1px;
+}
+
+/* css for last paragraph with imagese and logos */
+.productionTeam > p 
+{
+    margin: 0 20px;
+}
+
+/* css of age restriction logos */
+.productionTeam > p >span#restricted 
+{
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.productionTeam > p >span#restricted > span
+{
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid #ececec;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+}
+.productionTeam > p>span#restricted > span > span
+{
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-size: 10px;
+    border-top: 1px solid #ececec;
+    width: 136px;
+    line-height: 13px;
+    display:inline-block;
+    text-align: center;
+}
+
+/* css for panvasion logo  */
+.panavisionLogo
+{
+    position: relative;
+    width: 54px;
+    height: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    border: 1px solid #ececec;
+    font-size: 11px;
+}
+.panavisionLogo > span
+{
+    position: absolute;
+    margin: 0 0 0 1px; 
+    width: 40px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.panavisionLogo > span >span
+{
+    margin: 0 0 0 1px;
+    display: block;
+    width: 20px;
+    height: 12px;
+    text-align: center;
+    color: #ececec;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+/* css for 20th century fox logo */
+
+#foxLogo
+{
+    width: 60px ;
+    margin: 0px 0 -30px 0px;
+    height: auto;
+}
+
+/* css for registration mark */
+
+#realMark>span:first-child
+{
+    margin: 0 68px 0 150px;
+}
+
+.panavisionLogo > span
+{
+    position: absolute;
+    margin: 0 0 0 1px; 
+    width: 40px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.panavisionLogo > span >span
+{
+    margin: 0 0 0 1px;
+    display: block;
+    width: 20px;
+    height: 12px;
+    text-align: center;
+    color: #ececec;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+/* css for dolby atmos image */
+#dolby 
+{
+    position: relative;
+    width: 62px ;
+    height: auto;
+    margin: 0px 0px -52px 6px;
+}
+
+#dolbyText
+{
+    position: relative;
+    font-size: 12px;
+    margin: 0px 0px -52px 6px;
+}
+
+/* css for footer for the movie poster  */
+
+footer
+{
+    background-color: #d5e0ff;
+
+}
+footer > div
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+footer > div > h4
+{
+    padding: 20px 0 0 30px ;
+}
+footer > div >div
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* css for footer buttons  */
+footer > div >div > a
+{
+    width: 100px ;
+    height: auto;
+    padding: 5px;
+    margin: 0 0 30px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #8d85ff;
+    color: #2f1d6b;
+}
+
+footer > div > p
+{
+    font-size: 10px;
+}
