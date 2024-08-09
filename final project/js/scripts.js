@@ -1,3 +1,4 @@
+//Student name: Xiang Lu & Fabiana Souza De Nobrega Correa
 document.addEventListener('DOMContentLoaded', function() {
     // Select all "Add to Cart" buttons
     const cartButtons = document.querySelectorAll('div button');
