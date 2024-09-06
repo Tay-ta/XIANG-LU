@@ -1,0 +1,74 @@
+/** Simple Selector **/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    align-items: center;
+    padding: 20px;
+}
+
+footer{
+    text-align: lefts;
+}
+footer > img{
+    height: 100px;
+    width: auto;
+
+}
+/** Combinators **/
+header > div{
+    width:auto;
+    height:110 px;
+    flex-grow: 1;
+}
+header > div > a > img{
+    height: 100px;
+    width: auto;
+}
+header + main > section:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > section > h1{
+    text-align: center;
+}
+main > section > img{
+    width: 80%;
+    height: auto;
+    background: url('img/1.jpg')no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/** Contextual **/
+header menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+section h1{
+    font-size: 3.5em;
+}
+/** Grouped **/
+h1,h2,h3,h4,h5,h6{
+    font-family: arial;
+}
+/** class **/
+
+/** id **/
+#row-1{
+    color: #0cb19d;
+}
+/** structural pseudo-classes **/
+main > section + section > div:nth-child(3){
+    background-color: #0cb19d;
+}
