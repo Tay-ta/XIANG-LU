@@ -1,0 +1,28 @@
+/** Xiang Lu **/
+/** 200563938 **/
+/** Step one **/
+
+/** Step two **/
+h1, h2, h3{
+    font-family: "Nerko One", sans-serif;
+ }
+/** Step three **/
+h1{
+    font-size: 46px;
+    letter-spacing:2px;
+    text-align: center;
+    color:#063df3;
+}
+/** Step four **/
+p, li, a{
+    font-family: "Pirata One", sans-serif ;
+}
+/** Step five **/
+span{
+    color: blueviolet;
+}
+/** Step six **/
+h3{
+    font-size: 50px;
+    text-shadow: 2px 4px 2px rgba(244, 172, 4, 0.7);
+}
