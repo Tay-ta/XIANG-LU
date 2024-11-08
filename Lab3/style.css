@@ -1,0 +1,79 @@
+/*  Xiang Lu
+    200563938
+    LAB 3
+    Nov 8, 2024 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #F1FAEE;
+}
+
+.svg-button {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    background: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #1D3557;
+}
+
+.svg-button::before,
+.svg-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    background-color: none;
+    transition: all .3s ease-in-out;
+}
+
+.svg-button::after {
+    height: 2px;
+    width: 300px;
+    box-shadow: 0 98px #e7fb07;
+}
+
+.svg-button::before {
+    width: 2px;
+    height: 100px;
+    box-shadow: 298px 0 #e7fb07;
+}
+
+.svg-button:hover::before {
+    left: -10px;
+    box-shadow: 318px 0 #e7fb07;
+}
+
+.svg-button:hover::after {
+    top: -10px;
+    box-shadow: 0 118px ;
+}
+
+.rectangle {
+    fill: #070707;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.button-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    fill: #F1FAEE;
+    transition: transform 0.3s ease;
+}
+
+.svg-button:hover .rectangle {
+    fill: #1D3557;
+    transform: scale(1.1);
+}
+
+.svg-button:hover .button-text {
+    transform: scale(1.1);
+}
